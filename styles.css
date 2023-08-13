@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
+/* General */
 :root {
   --secondary-color: #333;
   --primary-color: #22254b;
@@ -15,6 +16,8 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+
+/* Nav */
 
 header {
   padding: 1rem;
@@ -54,7 +57,10 @@ h1 {
   padding: 0rem 0.5rem;
   border-radius: 5px;
   font-size: 28px;
+  text-transform: uppercase;
 }
+
+/* Movie box */
 
 main {
   display: flex;
@@ -87,9 +93,6 @@ main {
   padding: 0.5rem 1rem 1rem;
   letter-spacing: 0.5px;
 }
-/* .movie-info h3 {
-  margin-top: 0;
-} */
 
 .movie-info span {
   background-color: var(--primary-color);
@@ -133,6 +136,8 @@ main {
   overflow: hidden;
 }
 
+/* Media query */
+
 @media (max-width: 700px) {
   main {
     align-items: center;
@@ -166,7 +171,8 @@ main {
   }
   h1 {
     font-size: 12px;
-    padding: 5px 10px;
+    padding: 3px 1rem;
+    white-space: nowrap;
     text-align: center;
   }
 }
